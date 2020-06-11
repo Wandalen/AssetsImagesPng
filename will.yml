@@ -18,5 +18,7 @@ build :
     criterion :
       export : 1
       default : 1
+      proto : 0
+      asset : 1
     steps :
       - step::module.export

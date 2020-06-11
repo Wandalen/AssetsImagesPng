@@ -2,9 +2,12 @@ format: outwillfile-2.0
 root:
   - AssetsImagesPng.out
 consistency:
-  ../will.yml: &ref_0
-    hash: d6d34d357c2481175292433a67eafc4e
-    size: 317
+  AssetsImagesPng.out.will.yml: &ref_0
+    hash: 609742a312c07a0f71a4d8c46267ea34
+    size: 7739
+  ../will.yml: &ref_1
+    hash: 3d78fa89530a262abb542ae8f7a0f209
+    size: 349
 module:
   AssetsImagesPng.out:
     about:
@@ -51,12 +54,16 @@ module:
           generated: 1
           export: 1
           default: 1
+          proto: 0
+          asset: 1
         path: ../data
       exported.files.export:
         criterion:
           generated: 1
           export: 1
           default: 1
+          proto: 0
+          asset: 1
         path:
           - ../data/image/Pixels-2048x2048-depth8-interlaced1-rgb.png
           - ../data/image/Pixels-2x2-depth1-interlaced0-g.png
@@ -131,6 +138,8 @@ module:
           generated: 1
           export: 1
           default: 1
+          proto: 0
+          asset: 1
       exported.files.export:
         src:
           filePath:
@@ -143,7 +152,31 @@ module:
           generated: 1
           export: 1
           default: 1
-    step: {}
+          proto: 0
+          asset: 1
+    step:
+      exported.export:
+        opts:
+          filePath: 'reflector::exported.export'
+        criterion:
+          generated: 1
+          export: 1
+          default: 1
+          proto: 0
+          asset: 1
+        inherit:
+          - files.reflect
+      exported.files.export:
+        opts:
+          filePath: 'reflector::exported.files.export'
+        criterion:
+          generated: 1
+          export: 1
+          default: 1
+          proto: 0
+          asset: 1
+        inherit:
+          - files.reflect
     build:
       export:
         steps:
@@ -151,6 +184,8 @@ module:
         criterion:
           export: 1
           default: 1
+          proto: 0
+          asset: 1
     exported:
       export:
         version: 0.0.0
@@ -164,8 +199,11 @@ module:
         criterion:
           export: 1
           default: 1
+          proto: 0
+          asset: 1
     consistency:
-      ../will.yml: *ref_0
+      AssetsImagesPng.out.will.yml: *ref_0
+      ../will.yml: *ref_1
   ../:
     about:
       name: AssetsImagesPng
@@ -216,7 +254,12 @@ module:
         criterion:
           export: 1
           default: 1
+          proto: 0
+          asset: 1
     consistency:
       ../will.yml:
-        hash: d6d34d357c2481175292433a67eafc4e
-        size: 317
+        hash: 3d78fa89530a262abb542ae8f7a0f209
+        size: 349
+      AssetsImagesPng.out.will.yml:
+        hash: 609742a312c07a0f71a4d8c46267ea34
+        size: 7739

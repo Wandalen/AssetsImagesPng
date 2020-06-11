@@ -1,0 +1,22 @@
+
+about :
+
+  name : 'AssetsImagesPng'
+  description : 'Collection of PNG images for testing purpose.'
+
+path :
+
+  in : '.'
+  out : 'out'
+  data : 'data'
+  temp : 'path::out'
+  export : '{path::data}/**.png'
+
+build :
+
+  export :
+    criterion :
+      export : 1
+      default : 1
+    steps :
+      - step::module.export

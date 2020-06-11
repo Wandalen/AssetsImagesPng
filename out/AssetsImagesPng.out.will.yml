@@ -1,0 +1,222 @@
+format: outwillfile-2.0
+root:
+  - AssetsImagesPng.out
+consistency:
+  ../will.yml: &ref_0
+    hash: d6d34d357c2481175292433a67eafc4e
+    size: 317
+module:
+  AssetsImagesPng.out:
+    about:
+      name: AssetsImagesPng
+      org: noorg
+      description: Collection of PNG images for testing purpose.
+      enabled: 1
+    path:
+      module.willfiles:
+        criterion:
+          predefined: 1
+        path: AssetsImagesPng.out.will.yml
+      module.common:
+        criterion:
+          predefined: 1
+        path: AssetsImagesPng.out
+      module.original.willfiles:
+        criterion:
+          predefined: 1
+        path: ../will.yml
+      module.peer.willfiles:
+        criterion:
+          predefined: 1
+        path: ../will.yml
+      module.peer.in:
+        criterion:
+          predefined: 1
+        path: ..
+      download:
+        criterion:
+          predefined: 1
+      in:
+        path: .
+      out:
+        path: .
+      data:
+        path: ../data
+      temp:
+        path: 'path::out'
+      export:
+        path: '{path::data}/**.png'
+      exported.dir.export:
+        criterion:
+          generated: 1
+          export: 1
+          default: 1
+        path: ../data
+      exported.files.export:
+        criterion:
+          generated: 1
+          export: 1
+          default: 1
+        path:
+          - ../data/image/Pixels-2048x2048-depth8-interlaced1-rgb.png
+          - ../data/image/Pixels-2x2-depth1-interlaced0-g.png
+          - ../data/image/Pixels-2x2-depth1-interlaced1-g.png
+          - ../data/image/Pixels-2x2-depth16-interlaced0-g.png
+          - ../data/image/Pixels-2x2-depth16-interlaced0-ga.png
+          - ../data/image/Pixels-2x2-depth16-interlaced0-rgb.png
+          - ../data/image/Pixels-2x2-depth16-interlaced0-rgba.png
+          - ../data/image/Pixels-2x2-depth16-interlaced1-g.png
+          - ../data/image/Pixels-2x2-depth16-interlaced1-ga.png
+          - ../data/image/Pixels-2x2-depth16-interlaced1-rgb.png
+          - ../data/image/Pixels-2x2-depth16-interlaced1-rgba.png
+          - ../data/image/Pixels-2x2-depth2-interlaced0-g.png
+          - ../data/image/Pixels-2x2-depth2-interlaced0-palette.png
+          - ../data/image/Pixels-2x2-depth2-interlaced1-g.png
+          - ../data/image/Pixels-2x2-depth2-interlaced1-palette.png
+          - ../data/image/Pixels-2x2-depth4-interlaced0-g.png
+          - ../data/image/Pixels-2x2-depth4-interlaced0-palette.png
+          - ../data/image/Pixels-2x2-depth4-interlaced1-g.png
+          - ../data/image/Pixels-2x2-depth4-interlaced1-palette.png
+          - ../data/image/Pixels-2x2-depth8-interlaced0-g.png
+          - ../data/image/Pixels-2x2-depth8-interlaced0-ga.png
+          - ../data/image/Pixels-2x2-depth8-interlaced0-palette.png
+          - ../data/image/Pixels-2x2-depth8-interlaced0-rgb.png
+          - ../data/image/Pixels-2x2-depth8-interlaced0-rgba.png
+          - ../data/image/Pixels-2x2-depth8-interlaced1-g.png
+          - ../data/image/Pixels-2x2-depth8-interlaced1-ga.png
+          - ../data/image/Pixels-2x2-depth8-interlaced1-palette.png
+          - ../data/image/Pixels-2x2-depth8-interlaced1-rgb.png
+          - ../data/image/Pixels-2x2-depth8-interlaced1-rgba.png
+          - ../data/image/Pixels-4096x4096-depth8-interlaced1-rgb.png
+          - ../data/image/Pixels-4x5-depth1-interlaced0-g.png
+          - ../data/image/Pixels-4x5-depth1-interlaced1-g.png
+          - ../data/image/Pixels-4x5-depth16-interlaced0-g.png
+          - ../data/image/Pixels-4x5-depth16-interlaced0-ga.png
+          - ../data/image/Pixels-4x5-depth16-interlaced0-rgb.png
+          - ../data/image/Pixels-4x5-depth16-interlaced0-rgba.png
+          - ../data/image/Pixels-4x5-depth16-interlaced1-g.png
+          - ../data/image/Pixels-4x5-depth16-interlaced1-ga.png
+          - ../data/image/Pixels-4x5-depth16-interlaced1-rgb.png
+          - ../data/image/Pixels-4x5-depth16-interlaced1-rgba.png
+          - ../data/image/Pixels-4x5-depth2-interlaced0-g.png
+          - ../data/image/Pixels-4x5-depth2-interlaced0-rgb.png
+          - ../data/image/Pixels-4x5-depth2-interlaced1-g.png
+          - ../data/image/Pixels-4x5-depth2-interlaced1-rgb.png
+          - ../data/image/Pixels-4x5-depth4-interlaced0-g.png
+          - ../data/image/Pixels-4x5-depth4-interlaced0-rgb.png
+          - ../data/image/Pixels-4x5-depth4-interlaced1-g.png
+          - ../data/image/Pixels-4x5-depth4-interlaced1-rgb.png
+          - ../data/image/Pixels-4x5-depth8-interlaced0-g.png
+          - ../data/image/Pixels-4x5-depth8-interlaced0-ga.png
+          - ../data/image/Pixels-4x5-depth8-interlaced0-palette.png
+          - ../data/image/Pixels-4x5-depth8-interlaced0-rgb.png
+          - ../data/image/Pixels-4x5-depth8-interlaced0-rgba.png
+          - ../data/image/Pixels-4x5-depth8-interlaced1-g.png
+          - ../data/image/Pixels-4x5-depth8-interlaced1-ga.png
+          - ../data/image/Pixels-4x5-depth8-interlaced1-palette.png
+          - ../data/image/Pixels-4x5-depth8-interlaced1-rgb.png
+          - ../data/image/Pixels-4x5-depth8-interlaced1-rgba.png
+          - ../data/image/Pixels-8192x8192-depth8-interlaced1-rgb.png
+    submodule: {}
+    reflector:
+      exported.export:
+        src:
+          filePath:
+            '**.png': ''
+          prefixPath: ../data
+        mandatory: 1
+        dstRewritingOnlyPreserving: 1
+        linking: hardLinkMaybe
+        criterion:
+          generated: 1
+          export: 1
+          default: 1
+      exported.files.export:
+        src:
+          filePath:
+            'path::exported.files.export': ''
+          basePath: .
+          prefixPath: 'path::exported.dir.export'
+          recursive: 0
+        recursive: 0
+        criterion:
+          generated: 1
+          export: 1
+          default: 1
+    step: {}
+    build:
+      export:
+        steps:
+          - 'step::module.export'
+        criterion:
+          export: 1
+          default: 1
+    exported:
+      export:
+        version: 0.0.0
+        recursive: 0
+        withIntegrated: 2
+        tar: 0
+        exportedReflector: 'reflector::exported.export'
+        exportedFilesReflector: 'reflector::exported.files.export'
+        exportedDirPath: 'path::exported.dir.export'
+        exportedFilesPath: 'path::exported.files.export'
+        criterion:
+          export: 1
+          default: 1
+    consistency:
+      ../will.yml: *ref_0
+  ../:
+    about:
+      name: AssetsImagesPng
+      org: noorg
+      description: Collection of PNG images for testing purpose.
+      enabled: 1
+    path:
+      module.willfiles:
+        criterion:
+          predefined: 1
+        path: will.yml
+      module.original.willfiles:
+        criterion:
+          predefined: 1
+        path: will.yml
+      module.peer.willfiles:
+        criterion:
+          predefined: 1
+        path: out/AssetsImagesPng.out.will.yml
+      module.peer.in:
+        criterion:
+          predefined: 1
+        path: out
+      module.common:
+        criterion:
+          predefined: 1
+        path: ./
+      download:
+        criterion:
+          predefined: 1
+      in:
+        path: .
+      out:
+        path: out
+      data:
+        path: data
+      temp:
+        path: 'path::out'
+      export:
+        path: '{path::data}/**.png'
+    submodule: {}
+    reflector: {}
+    step: {}
+    build:
+      export:
+        steps:
+          - 'step::module.export'
+        criterion:
+          export: 1
+          default: 1
+    consistency:
+      ../will.yml:
+        hash: d6d34d357c2481175292433a67eafc4e
+        size: 317

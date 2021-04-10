@@ -3,6 +3,7 @@ about :
 
   name : 'AssetsImagesPng'
   description : 'Collection of PNG images for testing purpose.'
+  enabled : 0
 
 path :
 
